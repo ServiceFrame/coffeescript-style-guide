@@ -108,6 +108,22 @@ Avoid extraneous whitespace in the following situations:
        console.log x , y # No
     ```
 
+Except when:
+
+- Creating a new array with one or more elements
+
+    ```coffeescript
+      a = [ 1, 2, 3 ] # Yes
+      a = [1, 2, 3] # No
+    ```
+
+- Creating a new object (hash) with one or more key-value pairs
+
+    ```coffeescript
+      h = { a: 1, b: 2, c: 3 } # Yes
+      h = {a: 1, b: 2, c: 3} # No
+    ```
+
 Additional recommendations:
 
 - Always surround these binary operators with a **single space** on either side
